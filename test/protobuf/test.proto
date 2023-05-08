@@ -1,0 +1,38 @@
+syntax="proto3";// 声明proto版本
+
+package fixbug;// 声明代码所在的包(对c++来说就是namespace)
+
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+}
+// 定义登陆请求消息类型
+message LoginRequest
+{
+    bytes name=1; // 表明第一个字段
+    bytes pwd=2; // 定义第二个字段
+}
+// 定义登陆响应消息类型
+message LoginResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+
+message User
+{
+    bytes name=1;
+    uint32 age=2;
+    enum Sex
+    {
+        MAN=0;
+        WOMAN=1;
+    }
+    Sex sex=3;
+}
+message GetFriendListsResponse
+{
+    ResultCode result=1;
+    repeated User friend_lists=2;
+}
