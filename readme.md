@@ -614,10 +614,24 @@ map `<函数名,函数描述符>`
 
 }
 
-### RpcProvider网络接受字符流并调用相应的方法
+### RpcProvider网络解析字符流
+
+src/RpcProvider.cpp onmessage
 
 字符流的定义
 
 ![1684062797668](image/readme/1684062797668.png)
 
 因此RpcProvider 接受到相应的字节流, 进行解析, 并调用相应的函数即可
+
+### RpcProvider调用相关的函数,并发送序列化的response
+
+> src/RpcProvider.cpp callmeback
+
+根据service的callmethod,可以调用相关的函数
+
+需要 填入 request和 response 及 (不包含任何参数的)回调对象
+
+回调函数需要继承closure并实现 其中的run方法
+
+NewCallback能绑定相关的参数数据,并生成一个回调对象

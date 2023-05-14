@@ -24,6 +24,7 @@ public:
 
     void OnMessage(const muduo::net::TcpConnectionPtr&,muduo::net::Buffer*,muduo::Timestamp);
 
+    void callmeback(const muduo::net::TcpConnectionPtr& conn,google::protobuf::Message* response);
 private: 
     struct ServiceInfo
     {

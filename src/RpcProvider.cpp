@@ -115,9 +115,27 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,muduo::net:
     if(!request->ParseFromString(args_str))
     {
         std::cout<<"解析参数失败"<<std::endl;
-        return ;
+        return;
     }
+    // 生成回调对象
+    //google::protobuf:: Closure * done= google::protobuf::NewCallback<const muduo::net::TcpConnectionPtr&,google::protobuf::Message*> (callmeback,conn,response);
+    auto done=google::protobuf::NewCallback< RpcProvider,const muduo::net::TcpConnectionPtr& ,google::protobuf::Message* > (this,&RpcProvider::callmeback,conn,response);
+    
     // 调用该函数
-    //service->CallMethod(method_des,nullptr,request,response,callback);
+    service->CallMethod(method_des,nullptr,request,response,done);
+}
+// 需要连接, response 
+void RpcProvider::callmeback(const muduo::net::TcpConnectionPtr& conn,google::protobuf::Message* response)
+{
+    // 序列化
+    std::string response_str;
+    if(!response->SerializeToString(&response_str))
+    {
+        std::cout<<"response序列化失败"<<std::endl;
+        return;
+    }
+    conn->send(response_str);
+    // 模仿http的短连接
+    conn->shutdown();
 
 }
