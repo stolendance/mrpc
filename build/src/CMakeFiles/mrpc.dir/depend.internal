@@ -13,3 +13,7 @@ src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
  ../src/include/MrpcConfig.h
  ../src/include/RpcProvider.h
  /home/ubuntu/mrpc/src/RpcProvider.cpp
+ /home/ubuntu/mrpc/src/rpc_header.pb.h
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o
+ /home/ubuntu/mrpc/src/rpc_header.pb.cc
+ /home/ubuntu/mrpc/src/rpc_header.pb.h

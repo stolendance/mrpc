@@ -12,4 +12,8 @@ src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/include/MrpcApplication.h
 src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/include/MrpcConfig.h
 src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/include/RpcProvider.h
 src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/RpcProvider.cpp
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/rpc_header.pb.h
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o: ../src/rpc_header.pb.cc
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o: ../src/rpc_header.pb.h
 

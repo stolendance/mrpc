@@ -57,9 +57,57 @@ include src/CMakeFiles/mrpc.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/mrpc.dir/flags.make
 
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o: src/CMakeFiles/mrpc.dir/flags.make
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o: ../src/rpc_header.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/rpc_header.pb.cc.o -c /home/ubuntu/mrpc/src/rpc_header.pb.cc
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mrpc.dir/rpc_header.pb.cc.i"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/mrpc/src/rpc_header.pb.cc > CMakeFiles/mrpc.dir/rpc_header.pb.cc.i
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mrpc.dir/rpc_header.pb.cc.s"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/mrpc/src/rpc_header.pb.cc -o CMakeFiles/mrpc.dir/rpc_header.pb.cc.s
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.requires:
+
+.PHONY : src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.requires
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.provides: src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.provides.build
+.PHONY : src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.provides
+
+src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.provides.build: src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o
+
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: src/CMakeFiles/mrpc.dir/flags.make
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/RpcProvider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/RpcProvider.cpp.o -c /home/ubuntu/mrpc/src/RpcProvider.cpp
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mrpc.dir/RpcProvider.cpp.i"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/mrpc/src/RpcProvider.cpp > CMakeFiles/mrpc.dir/RpcProvider.cpp.i
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mrpc.dir/RpcProvider.cpp.s"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/mrpc/src/RpcProvider.cpp -o CMakeFiles/mrpc.dir/RpcProvider.cpp.s
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides.build
+.PHONY : src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides
+
+src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides.build: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
+
+
 src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o: src/CMakeFiles/mrpc.dir/flags.make
 src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o: ../src/MrpcApplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o"
 	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/MrpcApplication.cpp.o -c /home/ubuntu/mrpc/src/MrpcApplication.cpp
 
 src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.i: cmake_force
@@ -83,7 +131,7 @@ src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o.provides.build: src/CMakeFiles/mrp
 
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o: src/CMakeFiles/mrpc.dir/flags.make
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o: ../src/MrpcConfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o"
 	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/MrpcConfig.cpp.o -c /home/ubuntu/mrpc/src/MrpcConfig.cpp
 
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.i: cmake_force
@@ -105,45 +153,23 @@ src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o.provides: src/CMakeFiles/mrpc.dir/MrpcC
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o.provides.build: src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o
 
 
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: src/CMakeFiles/mrpc.dir/flags.make
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o: ../src/RpcProvider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o"
-	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/RpcProvider.cpp.o -c /home/ubuntu/mrpc/src/RpcProvider.cpp
-
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mrpc.dir/RpcProvider.cpp.i"
-	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/mrpc/src/RpcProvider.cpp > CMakeFiles/mrpc.dir/RpcProvider.cpp.i
-
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mrpc.dir/RpcProvider.cpp.s"
-	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/mrpc/src/RpcProvider.cpp -o CMakeFiles/mrpc.dir/RpcProvider.cpp.s
-
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
-
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides.build
-.PHONY : src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides
-
-src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.provides.build: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
-
-
 # Object files for target mrpc
 mrpc_OBJECTS = \
+"CMakeFiles/mrpc.dir/rpc_header.pb.cc.o" \
+"CMakeFiles/mrpc.dir/RpcProvider.cpp.o" \
 "CMakeFiles/mrpc.dir/MrpcApplication.cpp.o" \
-"CMakeFiles/mrpc.dir/MrpcConfig.cpp.o" \
-"CMakeFiles/mrpc.dir/RpcProvider.cpp.o"
+"CMakeFiles/mrpc.dir/MrpcConfig.cpp.o"
 
 # External object files for target mrpc
 mrpc_EXTERNAL_OBJECTS =
 
+../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o
+../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o
-../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/build.make
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../lib/libmrpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libmrpc.a"
 	cd /home/ubuntu/mrpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mrpc.dir/cmake_clean_target.cmake
 	cd /home/ubuntu/mrpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mrpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -152,9 +178,10 @@ src/CMakeFiles/mrpc.dir/build: ../lib/libmrpc.a
 
 .PHONY : src/CMakeFiles/mrpc.dir/build
 
+src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o.requires
+src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
 src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o.requires
 src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o.requires
-src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o.requires
 
 .PHONY : src/CMakeFiles/mrpc.dir/requires
 

@@ -206,6 +206,33 @@ RpcProvider.cpp.s:
 	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/RpcProvider.cpp.s
 .PHONY : RpcProvider.cpp.s
 
+rpc_header.pb.o: rpc_header.pb.cc.o
+
+.PHONY : rpc_header.pb.o
+
+# target to build an object file
+rpc_header.pb.cc.o:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o
+.PHONY : rpc_header.pb.cc.o
+
+rpc_header.pb.i: rpc_header.pb.cc.i
+
+.PHONY : rpc_header.pb.i
+
+# target to preprocess a source file
+rpc_header.pb.cc.i:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.i
+.PHONY : rpc_header.pb.cc.i
+
+rpc_header.pb.s: rpc_header.pb.cc.s
+
+.PHONY : rpc_header.pb.s
+
+# target to generate assembly for a file
+rpc_header.pb.cc.s:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.s
+.PHONY : rpc_header.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,6 +251,9 @@ help:
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"
+	@echo "... rpc_header.pb.o"
+	@echo "... rpc_header.pb.i"
+	@echo "... rpc_header.pb.s"
 .PHONY : help
 
 
