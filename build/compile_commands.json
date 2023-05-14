@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/ubuntu/mrpc/build/src",
-  "command": "/usr/bin/g++  -Dmrpc_EXPORTS -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g -fPIC   -o CMakeFiles/mrpc.dir/MrpcApplication.cpp.o -c /home/ubuntu/mrpc/src/MrpcApplication.cpp",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/MrpcApplication.cpp.o -c /home/ubuntu/mrpc/src/MrpcApplication.cpp",
   "file": "/home/ubuntu/mrpc/src/MrpcApplication.cpp"
 },
 {
   "directory": "/home/ubuntu/mrpc/build/src",
-  "command": "/usr/bin/g++  -Dmrpc_EXPORTS -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g -fPIC   -o CMakeFiles/mrpc.dir/MrpcConfig.cpp.o -c /home/ubuntu/mrpc/src/MrpcConfig.cpp",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/MrpcConfig.cpp.o -c /home/ubuntu/mrpc/src/MrpcConfig.cpp",
   "file": "/home/ubuntu/mrpc/src/MrpcConfig.cpp"
 },
 {
   "directory": "/home/ubuntu/mrpc/build/src",
-  "command": "/usr/bin/g++  -Dmrpc_EXPORTS -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g -fPIC   -o CMakeFiles/mrpc.dir/RpcProvider.cpp.o -c /home/ubuntu/mrpc/src/RpcProvider.cpp",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/RpcProvider.cpp.o -c /home/ubuntu/mrpc/src/RpcProvider.cpp",
   "file": "/home/ubuntu/mrpc/src/RpcProvider.cpp"
 },
 {

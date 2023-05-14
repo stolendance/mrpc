@@ -473,7 +473,6 @@ class mychannel:public RpcChannel
 }
 ```
 
-
 ## 本地函数注册为rpc函数(业务代码)
 
 在example 中提供
@@ -500,7 +499,7 @@ class mychannel:public RpcChannel
 
 声明一个对象继承xxxServiceRpc,重写其中注册的方法,使用本地方法进行覆盖
 
-调用的时候,先初始化一个rpc对象(单例模式全局可用), 
+调用的时候,先初始化一个rpc对象(单例模式全局可用),
 
 声明一个网络服务对象
 
@@ -581,3 +580,36 @@ src/include/
 MrpcApplication.h 单例模式 全局获取初始化后的rpc对象
 
 RpcProvider.h rpc网络服务提供类 相当于注册函数 跑起来
+
+### RpcProvider存储服务对象
+
+> 服务对象指的是一个类的实例
+>
+> callee 实现一个类 其中包含本地方法, 在protobuf注册一个Service,并填写希望注册的rpc函数后, 会自动生成同名的Service类,其中包含rpc虚函数的序列化参数返回形式 , 我们继承后,实现该虚函数即可(从序列化参数中取出相应数据, 调用本地方法, 把响应放入序列化参数中 , 调用回调函数)
+
+在callee注册rpc服务的过程中,需要把服务对象注册到RpcProvider中
+
+> RpcProvider负责参数与返回值的序列化,网络发送,存储服务对象及相应的方法
+
+```
+ // 把UserService对象发布到rpc节点上
+    RpcProvider provider; // 网络发布对象 
+    provider.NotifyService(new UserService());
+
+```
+
+**RpcProvider需要存储服务对象及相应的rpc函数**, 这样网络传过来,我们才能知道调用哪个对象的哪个函数
+
+因此 会建立一个映射
+
+map<服务名, 服务信息>
+
+struct 服务信息
+
+{
+
+服务指针
+
+map `<函数名,函数描述符>`
+
+}

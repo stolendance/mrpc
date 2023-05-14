@@ -1,1 +1,2 @@
-/usr/bin/g++ -fPIC -g  -shared -Wl,-soname,libmrpc.so -o ../../lib/libmrpc.so CMakeFiles/mrpc.dir/MrpcApplication.cpp.o CMakeFiles/mrpc.dir/MrpcConfig.cpp.o CMakeFiles/mrpc.dir/RpcProvider.cpp.o  -L/home/ubuntu/mrpc/example 
+/usr/bin/ar qc ../../lib/libmrpc.a  CMakeFiles/mrpc.dir/MrpcApplication.cpp.o CMakeFiles/mrpc.dir/MrpcConfig.cpp.o CMakeFiles/mrpc.dir/RpcProvider.cpp.o
+/usr/bin/ranlib ../../lib/libmrpc.a

@@ -2,6 +2,11 @@
 cmake_minimum_required(VERSION 3.0)
 project(mrpc)
 
+# 生成debug版本,可以进行gdb调试
+set(CMAKE_BUILD_TYPE "Debug")
+# ·作用是在生成目录，产生一个compile_commands.json文件
+set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
+
 # 设置项目可执行文件输出的路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 # 设置项目库文件输出的路径

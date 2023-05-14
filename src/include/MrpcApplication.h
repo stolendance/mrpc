@@ -8,11 +8,12 @@ class MrpcApplication
 public:
     static void Init(int argc, char ** argv);
     static MrpcApplication& GetInstance();
+    static MrpcConfig& getConfig();
 private:
     static MrpcConfig m_config;
     MrpcApplication(){};
     MrpcApplication(const MrpcApplication & other)=delete;
     MrpcApplication(MrpcApplication && other)=delete;
     MrpcApplication& operator =(const MrpcApplication& other)=delete;
-    ~MrpcApplication(){};
+
 };

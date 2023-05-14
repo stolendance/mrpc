@@ -48,3 +48,7 @@ MrpcApplication& MrpcApplication::GetInstance()
     static MrpcApplication app;
     return app;
 }
+MrpcConfig&  MrpcApplication::getConfig()
+{
+    return m_config;
+}

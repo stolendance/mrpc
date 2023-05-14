@@ -12,6 +12,7 @@ public:
     // 负责解析加载配置文件
     void LoadConfigFile(const char* config_file);
     std::string Load(const std::string &key);
+    std::string Trim(std::string src_buf);
 
 private:
     std::unordered_map<std::string ,std::string> m_configure;
