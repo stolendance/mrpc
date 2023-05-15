@@ -20,6 +20,11 @@
   "file": "/home/ubuntu/mrpc/src/MrpcConfig.cpp"
 },
 {
+  "directory": "/home/ubuntu/mrpc/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/MrpcChannel.cpp.o -c /home/ubuntu/mrpc/src/MrpcChannel.cpp",
+  "file": "/home/ubuntu/mrpc/src/MrpcChannel.cpp"
+},
+{
   "directory": "/home/ubuntu/mrpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/ubuntu/mrpc/example/callee/userservice.cpp",
   "file": "/home/ubuntu/mrpc/example/callee/userservice.cpp"
@@ -27,6 +32,16 @@
 {
   "directory": "/home/ubuntu/mrpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/ubuntu/mrpc/example/user.pb.cc",
+  "file": "/home/ubuntu/mrpc/example/user.pb.cc"
+},
+{
+  "directory": "/home/ubuntu/mrpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/comsumer.dir/callerservice.cpp.o -c /home/ubuntu/mrpc/example/caller/callerservice.cpp",
+  "file": "/home/ubuntu/mrpc/example/caller/callerservice.cpp"
+},
+{
+  "directory": "/home/ubuntu/mrpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/comsumer.dir/__/user.pb.cc.o -c /home/ubuntu/mrpc/example/user.pb.cc",
   "file": "/home/ubuntu/mrpc/example/user.pb.cc"
 }
 ]

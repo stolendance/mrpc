@@ -8,3 +8,6 @@
 /home/ubuntu/mrpc/build/example/callee/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/mrpc/build/example/callee/CMakeFiles/provider.dir
 /home/ubuntu/mrpc/build/example/callee/CMakeFiles/edit_cache.dir
+/home/ubuntu/mrpc/build/example/caller/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mrpc/build/example/caller/CMakeFiles/comsumer.dir
+/home/ubuntu/mrpc/build/example/caller/CMakeFiles/edit_cache.dir
