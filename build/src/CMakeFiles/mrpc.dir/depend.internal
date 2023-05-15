@@ -6,7 +6,10 @@ src/CMakeFiles/mrpc.dir/MrpcApplication.cpp.o
  ../src/include/MrpcConfig.h
  /home/ubuntu/mrpc/src/MrpcApplication.cpp
 src/CMakeFiles/mrpc.dir/MrpcChannel.cpp.o
+ ../src/include/MrpcApplication.h
  ../src/include/MrpcChannel.h
+ ../src/include/MrpcConfig.h
+ ../src/include/rpc_header.pb.h
  /home/ubuntu/mrpc/src/MrpcChannel.cpp
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o
  ../src/include/MrpcConfig.h

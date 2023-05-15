@@ -1,4 +1,5 @@
 #include<google/protobuf/service.h>
+#include<google/protobuf/descriptor.h>
 class MrpcChannel:public google::protobuf::RpcChannel
 {
 public:

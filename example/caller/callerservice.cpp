@@ -9,10 +9,25 @@ int main(int argc, char** argv)
 
     // 
     fixbug::UserServiceRpc_Stub stub(new MrpcChannel());
-    // 定义好request和
-    //stub.Login(....)
+    // 初始化相关参数
+    
+    fixbug::LoginRequest request;
+    request.set_name("云霞川");
+    request.set_pwd("hch12345");
+    fixbug::LoginResponse response;
+    stub.Login(nullptr,&request,&response,nullptr);
     // 会自动调rpcchannel  用callmethod
 
+    // 得到执行后的response
+    if(!response.success())
+    {
+        std::cout<<"远程rpc函数执行失败"<<std::endl;
+        std::cout<<"errcode:"<<response.result().errcode()<<std::endl;
+        std::cout<<"errmsg:"<<response.result().errmsg()<<std::endl;
+        return 0;
+    }
+    std::cout<<"远程rpc函数执行成功"<<std::endl;
+    
 
 
 }

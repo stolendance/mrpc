@@ -635,3 +635,15 @@ src/RpcProvider.cpp onmessage
 回调函数需要继承closure并实现 其中的run方法
 
 NewCallback能绑定相关的参数数据,并生成一个回调对象
+
+### 使用框架调用Rpc函数
+
+example/caller
+
+初始化MrpcApplication后
+
+声明一个UserServiceRpc_Stub
+
+通过stub即可调用相关rpc函数
+
+### 调用方底层序列化参数并发送

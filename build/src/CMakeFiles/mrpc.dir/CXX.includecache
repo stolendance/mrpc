@@ -13,6 +13,8 @@ MrpcConfig.h
 ../src/include/MrpcChannel.h
 google/protobuf/service.h
 -
+google/protobuf/descriptor.h
+-
 
 ../src/include/MrpcConfig.h
 unordered_map
@@ -89,6 +91,20 @@ MrpcApplication.h
 /home/ubuntu/mrpc/src/MrpcChannel.cpp
 MrpcChannel.h
 /home/ubuntu/mrpc/src/MrpcChannel.h
+rpc_header.pb.h
+/home/ubuntu/mrpc/src/rpc_header.pb.h
+string
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+MrpcApplication.h
+/home/ubuntu/mrpc/src/MrpcApplication.h
 
 /home/ubuntu/mrpc/src/MrpcConfig.cpp
 MrpcConfig.h

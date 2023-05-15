@@ -53,6 +53,8 @@ MrpcConfig.h
 ../src/include/MrpcChannel.h
 google/protobuf/service.h
 -
+google/protobuf/descriptor.h
+-
 
 ../src/include/MrpcConfig.h
 unordered_map
