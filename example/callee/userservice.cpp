@@ -8,9 +8,25 @@
 userservice 原本是一个本地服务,提供了两个进程内的本地方法,login和getfriendlists
 */
 // 
+std::string HelloQ(std::string name)
+{
+    std::string s="hello "+ name +"!";
+    return s;
+}
 class UserService:public fixbug::UserServiceRpc
 {
 public:
+    void Hello(::google::protobuf::RpcController* controller,
+                       const ::fixbug::HelloRequest* request,
+                       ::fixbug::HelloReponse* response,
+                       ::google::protobuf::Closure* done)
+    {
+        std::string name=request->name();
+        std::string rs=HelloQ(name);
+        response->set_hello(rs);
+        done->Run();
+    }
+
     bool Login(std::string name, std::string pwd)
     {
         std::cout<<"doing local service: Login"<<std::endl;
