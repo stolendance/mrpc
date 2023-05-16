@@ -32,6 +32,9 @@ public:
         // 框架给业务上爆了请求参数LoginRequest,业务获取相应数据做本地业务
         std::string name=request->name();
         std::string pwd=request->pwd();
+
+        std::cout<<"rpc_login name: "<<name<<std::endl;
+        std::cout<<"rpc_login pwd: "<<pwd<<std::endl;
         // 做本地业务
         bool login_result=Login(name,pwd);
         // 把响应写入

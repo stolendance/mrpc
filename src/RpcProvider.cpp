@@ -77,7 +77,7 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,muduo::net:
     std::string buffer_str=buffer->retrieveAllAsString();
     // 截取前四个字节
     uint32_t len=0;
-    buffer_str.copy((char*)len,4,0);
+    buffer_str.copy((char*)&len,4,0);
     // 解析rpc_header对象
     std::string rpc_header_str=buffer_str.substr(4,len);
     src::RpcHeader rpcheader=src::RpcHeader();

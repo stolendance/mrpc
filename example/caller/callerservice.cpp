@@ -27,6 +27,7 @@ int main(int argc, char** argv)
         return 0;
     }
     std::cout<<"远程rpc函数执行成功"<<std::endl;
+    std::cout<<"success: "<<response.success()<<std::endl;
     
 
 

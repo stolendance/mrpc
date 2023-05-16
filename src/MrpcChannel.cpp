@@ -30,8 +30,7 @@ void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     header.SerializeToString(&rpc_header_str);
     std::string rpc_header_len_str;
     uint32_t rpc_header_len=rpc_header_str.size();
-
-    rpc_header_len_str.insert(0,std::string((char*) rpc_header_len),4);
+    rpc_header_len_str.insert(0,std::string((char*)&rpc_header_len,4));
     
     // 字符串都已经准备好
     std::string send_str;
@@ -68,12 +67,14 @@ void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
     char buf[1024]={0};
     int len2=0;
-    if(len2=recv(client_sock,buf,1024,0)<0)
+    if((len2=recv(client_sock,buf,1024,0))<0)
     {
         std::cout<<"接受失败"<<std::endl;
         return;
     }
     std::string response_str=buf;
-    response->ParseFromString(response_str);
+    response->ParseFromArray(buf,len2);
+    std::cout<<"success: "<<std::endl;
+    //response->ParseFromString(response_str);
 }
 

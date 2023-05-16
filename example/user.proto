@@ -16,7 +16,16 @@ message LoginResponse
     ResultCode result=1;
     bool success=2;
 }
+message HelloRequest
+{
+    bytes name=1;
+}
+message HelloReponse
+{
+    bytes hello=2;
+}
 service UserServiceRpc
 {
     rpc Login(LoginRequest) returns(LoginResponse);
+    rpc Hello(HelloRequest) returns(HelloReponse);
 }
