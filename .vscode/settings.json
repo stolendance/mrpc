@@ -60,6 +60,7 @@
         "bitset": "cpp",
         "complex": "cpp",
         "list": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "queue": "cpp"
     }
 }

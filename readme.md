@@ -647,3 +647,8 @@ example/caller
 通过stub即可调用相关rpc函数
 
 ### 调用方底层序列化参数并发送
+
+
+### rpccontroller
+
+用于传递错误信息

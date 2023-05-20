@@ -2,7 +2,9 @@
 #include<string>
 #include"user.pb.h"
 #include"MrpcApplication.h"
+#include"MrpcLog.h"
 #include"RpcProvider.h"
+#include<thread>
 /*
 #include "../user.pb.h"  不需要 因为外层的cmakelist已经设定好搜寻头文件的地址
 userservice 原本是一个本地服务,提供了两个进程内的本地方法,login和getfriendlists
@@ -67,15 +69,21 @@ public:
 };
 int main(int argc,char **argv)
 {
-    // 调用框架的初始化操作
-    MrpcApplication::Init(argc,argv);
+    // // 调用框架的初始化操作
+    // MrpcApplication::Init(argc,argv);
 
-    // 把UserService对象发布到rpc节点上
-    RpcProvider provider; // 网络发布对象 
-    provider.NotifyService(new UserService());
+    // // 把UserService对象发布到rpc节点上
+    // RpcProvider provider; // 网络发布对象 
+    // provider.NotifyService(new UserService());
 
-    //启动rpc
-    provider.Run();
+    // //启动rpc
+    // provider.Run();
 
-    return 0;
+    // return 0;
+    MrpcLog& Log=  MrpcLog::getInstance();
+    Log.log("hello world1");
+    Log.log("hello world2");
+    Log.log("hello world3");
+    std::this_thread::sleep_for(std::chrono::milliseconds(500)); 
+    
 }

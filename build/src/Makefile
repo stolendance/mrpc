@@ -206,6 +206,60 @@ MrpcConfig.cpp.s:
 	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.s
 .PHONY : MrpcConfig.cpp.s
 
+MrpcController.o: MrpcController.cpp.o
+
+.PHONY : MrpcController.o
+
+# target to build an object file
+MrpcController.cpp.o:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcController.cpp.o
+.PHONY : MrpcController.cpp.o
+
+MrpcController.i: MrpcController.cpp.i
+
+.PHONY : MrpcController.i
+
+# target to preprocess a source file
+MrpcController.cpp.i:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcController.cpp.i
+.PHONY : MrpcController.cpp.i
+
+MrpcController.s: MrpcController.cpp.s
+
+.PHONY : MrpcController.s
+
+# target to generate assembly for a file
+MrpcController.cpp.s:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcController.cpp.s
+.PHONY : MrpcController.cpp.s
+
+MrpcLog.o: MrpcLog.cpp.o
+
+.PHONY : MrpcLog.o
+
+# target to build an object file
+MrpcLog.cpp.o:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o
+.PHONY : MrpcLog.cpp.o
+
+MrpcLog.i: MrpcLog.cpp.i
+
+.PHONY : MrpcLog.i
+
+# target to preprocess a source file
+MrpcLog.cpp.i:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcLog.cpp.i
+.PHONY : MrpcLog.cpp.i
+
+MrpcLog.s: MrpcLog.cpp.s
+
+.PHONY : MrpcLog.s
+
+# target to generate assembly for a file
+MrpcLog.cpp.s:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/MrpcLog.cpp.s
+.PHONY : MrpcLog.cpp.s
+
 RpcProvider.o: RpcProvider.cpp.o
 
 .PHONY : RpcProvider.o
@@ -278,6 +332,12 @@ help:
 	@echo "... MrpcConfig.o"
 	@echo "... MrpcConfig.i"
 	@echo "... MrpcConfig.s"
+	@echo "... MrpcController.o"
+	@echo "... MrpcController.i"
+	@echo "... MrpcController.s"
+	@echo "... MrpcLog.o"
+	@echo "... MrpcLog.i"
+	@echo "... MrpcLog.s"
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"

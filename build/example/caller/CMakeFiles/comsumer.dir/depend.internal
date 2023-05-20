@@ -9,4 +9,5 @@ example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o
  ../src/include/MrpcApplication.h
  ../src/include/MrpcChannel.h
  ../src/include/MrpcConfig.h
+ ../src/include/MrpcController.h
  /home/ubuntu/mrpc/example/caller/callerservice.cpp

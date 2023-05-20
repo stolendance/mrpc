@@ -8,5 +8,6 @@ example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../example/user.pb.h
 example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../src/include/MrpcApplication.h
 example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../src/include/MrpcChannel.h
 example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../src/include/MrpcConfig.h
+example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../src/include/MrpcController.h
 example/caller/CMakeFiles/comsumer.dir/callerservice.cpp.o: ../example/caller/callerservice.cpp
 

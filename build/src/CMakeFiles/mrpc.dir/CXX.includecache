@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../src/include/Lockqueue.h
+queue
+-
+mutex
+-
+condition_variable
+-
+
 ../src/include/MrpcApplication.h
 MrpcConfig.h
 ../src/include/MrpcConfig.h
@@ -21,6 +29,24 @@ unordered_map
 -
 string
 -
+
+../src/include/MrpcController.h
+iostream
+-
+google/protobuf/service.h
+-
+string
+-
+
+../src/include/MrpcLog.h
+queue
+-
+iostream
+-
+string
+-
+Lockqueue.h
+../src/include/Lockqueue.h
 
 ../src/include/RpcProvider.h
 google/protobuf/service.h
@@ -116,6 +142,20 @@ string
 iostream
 -
 string
+-
+
+/home/ubuntu/mrpc/src/MrpcController.cpp
+MrpcController.h
+/home/ubuntu/mrpc/src/MrpcController.h
+
+/home/ubuntu/mrpc/src/MrpcLog.cpp
+MrpcLog.h
+/home/ubuntu/mrpc/src/MrpcLog.h
+thread
+-
+iostream
+-
+stdio.h
 -
 
 /home/ubuntu/mrpc/src/RpcProvider.cpp

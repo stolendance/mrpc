@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mrpc.dir/MrpcApplication.cpp.o"
   "CMakeFiles/mrpc.dir/MrpcConfig.cpp.o"
   "CMakeFiles/mrpc.dir/MrpcChannel.cpp.o"
+  "CMakeFiles/mrpc.dir/MrpcController.cpp.o"
+  "CMakeFiles/mrpc.dir/MrpcLog.cpp.o"
   "../../lib/libmrpc.pdb"
   "../../lib/libmrpc.a"
 )

@@ -46,7 +46,7 @@ void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     int client_sock=socket(AF_INET,SOCK_STREAM,0);
     if(client_sock==-1)
     {
-        std::cout<<"client_sock申请失败"<<std::endl;
+        controller->SetFailed("client_sock申请失败");
         return;
     }
     struct sockaddr_in sock_addr;
@@ -55,26 +55,26 @@ void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     sock_addr.sin_addr.s_addr=inet_addr(ip.c_str());
     if(connect(client_sock,(sockaddr*)&sock_addr,sizeof(sock_addr))<0)
     {
-        std::cout<<"连接失败"<<std::endl;
+        controller->SetFailed("连接失败");
         return;
     }
     // 发送信息
     int len=0;
     if(len=send(client_sock,send_str.c_str(),send_str.size(),0)<0)
     {
-        std::cout<<"发送失败"<<std::endl;
+        controller->SetFailed("发送失败");
         return;
     }
     char buf[1024]={0};
     int len2=0;
     if((len2=recv(client_sock,buf,1024,0))<0)
     {
-        std::cout<<"接受失败"<<std::endl;
+        controller->SetFailed("接受失败");
         return;
     }
     std::string response_str=buf;
     response->ParseFromArray(buf,len2);
-    std::cout<<"success: "<<std::endl;
+    //std::cout<<"success: "<<std::endl;
     //response->ParseFromString(response_str);
 }
 

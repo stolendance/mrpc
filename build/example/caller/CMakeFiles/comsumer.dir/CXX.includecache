@@ -62,6 +62,14 @@ unordered_map
 string
 -
 
+../src/include/MrpcController.h
+iostream
+-
+google/protobuf/service.h
+-
+string
+-
+
 /home/ubuntu/mrpc/example/caller/callerservice.cpp
 iostream
 -
@@ -69,6 +77,8 @@ MrpcApplication.h
 /home/ubuntu/mrpc/example/caller/MrpcApplication.h
 MrpcChannel.h
 /home/ubuntu/mrpc/example/caller/MrpcChannel.h
+MrpcController.h
+/home/ubuntu/mrpc/example/caller/MrpcController.h
 user.pb.h
 /home/ubuntu/mrpc/example/caller/user.pb.h
 

@@ -5,8 +5,10 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.cc
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.h
 
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../example/user.pb.h
+example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../src/include/Lockqueue.h
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../src/include/MrpcApplication.h
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../src/include/MrpcConfig.h
+example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../src/include/MrpcLog.h
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../src/include/RpcProvider.h
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../example/callee/userservice.cpp
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: ../example/user.pb.h

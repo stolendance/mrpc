@@ -25,6 +25,16 @@
   "file": "/home/ubuntu/mrpc/src/MrpcChannel.cpp"
 },
 {
+  "directory": "/home/ubuntu/mrpc/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/MrpcController.cpp.o -c /home/ubuntu/mrpc/src/MrpcController.cpp",
+  "file": "/home/ubuntu/mrpc/src/MrpcController.cpp"
+},
+{
+  "directory": "/home/ubuntu/mrpc/build/src",
+  "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/mrpc.dir/MrpcLog.cpp.o -c /home/ubuntu/mrpc/src/MrpcLog.cpp",
+  "file": "/home/ubuntu/mrpc/src/MrpcLog.cpp"
+},
+{
   "directory": "/home/ubuntu/mrpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/ubuntu/mrpc/src/include -I/home/ubuntu/mrpc/example  -g   -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/ubuntu/mrpc/example/callee/userservice.cpp",
   "file": "/home/ubuntu/mrpc/example/callee/userservice.cpp"

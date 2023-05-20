@@ -14,6 +14,13 @@ src/CMakeFiles/mrpc.dir/MrpcChannel.cpp.o
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o
  ../src/include/MrpcConfig.h
  /home/ubuntu/mrpc/src/MrpcConfig.cpp
+src/CMakeFiles/mrpc.dir/MrpcController.cpp.o
+ ../src/include/MrpcController.h
+ /home/ubuntu/mrpc/src/MrpcController.cpp
+src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o
+ ../src/include/Lockqueue.h
+ ../src/include/MrpcLog.h
+ /home/ubuntu/mrpc/src/MrpcLog.cpp
 src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
  ../src/include/MrpcApplication.h
  ../src/include/MrpcConfig.h
