@@ -225,6 +225,30 @@ src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o.provides: src/CMakeFiles/mrpc.dir/MrpcLog.
 src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o.provides.build: src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o
 
 
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o: src/CMakeFiles/mrpc.dir/flags.make
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o: ../src/Zookeeperutil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o -c /home/ubuntu/mrpc/src/Zookeeperutil.cpp
+
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mrpc.dir/Zookeeperutil.cpp.i"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/mrpc/src/Zookeeperutil.cpp > CMakeFiles/mrpc.dir/Zookeeperutil.cpp.i
+
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mrpc.dir/Zookeeperutil.cpp.s"
+	cd /home/ubuntu/mrpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/mrpc/src/Zookeeperutil.cpp -o CMakeFiles/mrpc.dir/Zookeeperutil.cpp.s
+
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.requires
+
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.provides: src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.provides.build
+.PHONY : src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.provides
+
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.provides.build: src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o
+
+
 # Object files for target mrpc
 mrpc_OBJECTS = \
 "CMakeFiles/mrpc.dir/rpc_header.pb.cc.o" \
@@ -233,7 +257,8 @@ mrpc_OBJECTS = \
 "CMakeFiles/mrpc.dir/MrpcConfig.cpp.o" \
 "CMakeFiles/mrpc.dir/MrpcChannel.cpp.o" \
 "CMakeFiles/mrpc.dir/MrpcController.cpp.o" \
-"CMakeFiles/mrpc.dir/MrpcLog.cpp.o"
+"CMakeFiles/mrpc.dir/MrpcLog.cpp.o" \
+"CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o"
 
 # External object files for target mrpc
 mrpc_EXTERNAL_OBJECTS =
@@ -245,9 +270,10 @@ mrpc_EXTERNAL_OBJECTS =
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/MrpcChannel.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/MrpcController.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o
+../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/build.make
 ../lib/libmrpc.a: src/CMakeFiles/mrpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libmrpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/mrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libmrpc.a"
 	cd /home/ubuntu/mrpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mrpc.dir/cmake_clean_target.cmake
 	cd /home/ubuntu/mrpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mrpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -263,6 +289,7 @@ src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o.requi
 src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcChannel.cpp.o.requires
 src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcController.cpp.o.requires
 src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o.requires
+src/CMakeFiles/mrpc.dir/requires: src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o.requires
 
 .PHONY : src/CMakeFiles/mrpc.dir/requires
 

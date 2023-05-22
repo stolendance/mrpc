@@ -287,6 +287,33 @@ RpcProvider.cpp.s:
 	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/RpcProvider.cpp.s
 .PHONY : RpcProvider.cpp.s
 
+Zookeeperutil.o: Zookeeperutil.cpp.o
+
+.PHONY : Zookeeperutil.o
+
+# target to build an object file
+Zookeeperutil.cpp.o:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o
+.PHONY : Zookeeperutil.cpp.o
+
+Zookeeperutil.i: Zookeeperutil.cpp.i
+
+.PHONY : Zookeeperutil.i
+
+# target to preprocess a source file
+Zookeeperutil.cpp.i:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.i
+.PHONY : Zookeeperutil.cpp.i
+
+Zookeeperutil.s: Zookeeperutil.cpp.s
+
+.PHONY : Zookeeperutil.s
+
+# target to generate assembly for a file
+Zookeeperutil.cpp.s:
+	cd /home/ubuntu/mrpc/build && $(MAKE) -f src/CMakeFiles/mrpc.dir/build.make src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.s
+.PHONY : Zookeeperutil.cpp.s
+
 rpc_header.pb.o: rpc_header.pb.cc.o
 
 .PHONY : rpc_header.pb.o
@@ -341,6 +368,9 @@ help:
 	@echo "... RpcProvider.o"
 	@echo "... RpcProvider.i"
 	@echo "... RpcProvider.s"
+	@echo "... Zookeeperutil.o"
+	@echo "... Zookeeperutil.i"
+	@echo "... Zookeeperutil.s"
 	@echo "... rpc_header.pb.o"
 	@echo "... rpc_header.pb.i"
 	@echo "... rpc_header.pb.s"

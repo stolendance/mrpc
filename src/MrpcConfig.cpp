@@ -41,6 +41,7 @@ void MrpcConfig::LoadConfigFile(const char* config_file)
         src_buf=src_buf.substr(idx+1,src_buf.size()-idx-1);
 
         m_configure[key]=src_buf;
+        std::cout<<"port:"<<src_buf<<std::endl;
     }
 
 }
@@ -63,11 +64,11 @@ std::string MrpcConfig::Trim(std::string src_buf)
         src_buf=src_buf.substr(idx,src_buf.size()-idx);
     }
     // 去掉字符串后面多余的空格
-    idx=src_buf.find_last_not_of(' ');
+    idx=src_buf.find_last_not_of(' \n');
     if(idx!=-1)
     {
         // 说明字符串后面有空格
-        src_buf=src_buf.substr(0,idx);
+        src_buf=src_buf.substr(0,idx+1);
     }
     return src_buf;
 }

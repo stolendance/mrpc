@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/mrpc/src/MrpcController.cpp" "/home/ubuntu/mrpc/build/src/CMakeFiles/mrpc.dir/MrpcController.cpp.o"
   "/home/ubuntu/mrpc/src/MrpcLog.cpp" "/home/ubuntu/mrpc/build/src/CMakeFiles/mrpc.dir/MrpcLog.cpp.o"
   "/home/ubuntu/mrpc/src/RpcProvider.cpp" "/home/ubuntu/mrpc/build/src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o"
+  "/home/ubuntu/mrpc/src/Zookeeperutil.cpp" "/home/ubuntu/mrpc/build/src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o"
   "/home/ubuntu/mrpc/src/rpc_header.pb.cc" "/home/ubuntu/mrpc/build/src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

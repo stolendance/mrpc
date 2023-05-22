@@ -6,6 +6,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include "MrpcApplication.h"
+#include "Zookeeperutil.h" 
 void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
                         google::protobuf::RpcController* controller, const google::protobuf::Message* request,
                         google::protobuf::Message* response, google::protobuf::Closure* done)
@@ -38,10 +39,27 @@ void MrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     send_str+=rpc_header_str;
     send_str+=args_str;
 
+    std::string zoo_ip=MrpcApplication::getConfig().Load("zookeeperip");
+    uint16_t zoo_port=stoi(MrpcApplication::getConfig().Load("zookeeperport"));
 
-    //  取得ip和地址
-    std::string ip=MrpcApplication::getConfig().Load("rpcserverip");
-    uint16_t port=stoi(MrpcApplication::getConfig().Load("rpcserverport"));
+    
+    std::string zoo_str="/"+service_name+"/"+method_name;
+    Zookeeperutil zk=Zookeeperutil();
+    zk.start();
+    std::string ip_port=zk.getData(zoo_str);
+    if(ip_port.size()==0)
+    {
+        std::cout<<"未找到zookeeper"<<std::endl;
+        exit(EXIT_FAILURE);
+    }
+    int idx=ip_port.find_first_of(':');
+    std::string ip=ip_port.substr(0,idx);
+    uint16_t port=std::stoi(ip_port.substr(idx+1,ip_port.size()-1-idx));
+    std::cout<<"得到rpc服务ip:"<<ip<<std::endl;
+    std::cout<<"得到rpc服务端口:"<<port<<std::endl;
+    // //  取得ip和地址
+    // std::string ip=MrpcApplication::getConfig().Load("rpcserverip");
+    // uint16_t port=stoi(MrpcApplication::getConfig().Load("rpcserverport"));
     // socket编程 发送信息
     int client_sock=socket(AF_INET,SOCK_STREAM,0);
     if(client_sock==-1)

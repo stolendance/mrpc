@@ -68,6 +68,12 @@ google/protobuf/service.h
 google/protobuf/descriptor.h
 -
 
+../src/include/Zookeeperutil.h
+string
+-
+zookeeper/zookeeper.h
+-
+
 ../src/include/rpc_header.pb.h
 limits
 -
@@ -131,6 +137,8 @@ arpa/inet.h
 -
 MrpcApplication.h
 /home/ubuntu/mrpc/src/MrpcApplication.h
+Zookeeperutil.h
+/home/ubuntu/mrpc/src/Zookeeperutil.h
 
 /home/ubuntu/mrpc/src/MrpcConfig.cpp
 MrpcConfig.h
@@ -168,6 +176,20 @@ rpc_header.pb.h
 iostream
 -
 functional
+-
+Zookeeperutil.h
+/home/ubuntu/mrpc/src/Zookeeperutil.h
+
+/home/ubuntu/mrpc/src/Zookeeperutil.cpp
+zookeeper/zookeeper.h
+-
+Zookeeperutil.h
+/home/ubuntu/mrpc/src/Zookeeperutil.h
+MrpcApplication.h
+/home/ubuntu/mrpc/src/MrpcApplication.h
+semaphore.h
+-
+iostream
 -
 
 /home/ubuntu/mrpc/src/rpc_header.pb.cc

@@ -184,7 +184,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 mrpc_BINARY_DIR:STATIC=/home/ubuntu/mrpc/build
 
 //Dependencies for the target
-mrpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;
+mrpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;general;zookeeper_mt;
 
 //Value Computed by CMake
 mrpc_SOURCE_DIR:STATIC=/home/ubuntu/mrpc

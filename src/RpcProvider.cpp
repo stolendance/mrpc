@@ -3,6 +3,7 @@
 #include "rpc_header.pb.h" 
 #include<iostream>
 #include<functional>
+#include "Zookeeperutil.h"
 void RpcProvider::NotifyService(google::protobuf::Service * service){
     const google::protobuf::ServiceDescriptor* service_ptr =service->GetDescriptor();
     // 得到method的数量
@@ -55,14 +56,24 @@ void RpcProvider::Run(){
     server.setThreadNum(4);
 
     std::cout<<"Rpc start"<<" ip:"<<ip<<" port:"<<port<<std::endl;
-
+    Zookeeperutil zk;
+    zk.start();
+    std::string ip_port=ip+":"+config_ins.Load("rpcserverport");
+    // 注册服务
+    for(auto service:service_dic)
+    {
+        std::string service_path="/"+service.first;
+        zk.create(service_path,"",0);
+        for(auto func:service.second.method_dic)
+        {
+            std::string func_path=service_path+"/"+func.first;
+            zk.create(func_path,ip_port,0);
+        }
+    }
     //启动网络服务
     server.start();
     m_eventLoop.loop();
-
     //std::cout<<"hello world"<<std::endl;
-    
-
 }
 void RpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
 {

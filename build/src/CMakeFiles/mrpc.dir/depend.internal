@@ -9,6 +9,7 @@ src/CMakeFiles/mrpc.dir/MrpcChannel.cpp.o
  ../src/include/MrpcApplication.h
  ../src/include/MrpcChannel.h
  ../src/include/MrpcConfig.h
+ ../src/include/Zookeeperutil.h
  ../src/include/rpc_header.pb.h
  /home/ubuntu/mrpc/src/MrpcChannel.cpp
 src/CMakeFiles/mrpc.dir/MrpcConfig.cpp.o
@@ -25,8 +26,14 @@ src/CMakeFiles/mrpc.dir/RpcProvider.cpp.o
  ../src/include/MrpcApplication.h
  ../src/include/MrpcConfig.h
  ../src/include/RpcProvider.h
+ ../src/include/Zookeeperutil.h
  ../src/include/rpc_header.pb.h
  /home/ubuntu/mrpc/src/RpcProvider.cpp
+src/CMakeFiles/mrpc.dir/Zookeeperutil.cpp.o
+ ../src/include/MrpcApplication.h
+ ../src/include/MrpcConfig.h
+ ../src/include/Zookeeperutil.h
+ /home/ubuntu/mrpc/src/Zookeeperutil.cpp
 src/CMakeFiles/mrpc.dir/rpc_header.pb.cc.o
  ../src/include/rpc_header.pb.h
  /home/ubuntu/mrpc/src/rpc_header.pb.cc
