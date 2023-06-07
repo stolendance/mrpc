@@ -115,7 +115,6 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,muduo::net:
         return;
     }
     const google::protobuf::MethodDescriptor* method_des=service_info.method_dic[method_name];
-
     // 截取 args 此时的args为request
     std::string args_str=buffer_str.substr(4+len,args_len);
     // 解析args ,需要获得 service method 下的request

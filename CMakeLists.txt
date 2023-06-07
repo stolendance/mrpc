@@ -16,7 +16,7 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 include_directories(${PROJECT_SOURCE_DIR}/src/include)
 include_directories(${PROJECT_SOURCE_DIR}/example)
 # 设置项目库文件搜索路径
-link_directories(${PROJECT_SOURCE_DIR}/example)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 add_subdirectory(src)
 # 继续去example 中找cmakelist

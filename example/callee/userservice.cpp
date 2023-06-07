@@ -9,6 +9,7 @@
 #include "../user.pb.h"  不需要 因为外层的cmakelist已经设定好搜寻头文件的地址
 userservice 原本是一个本地服务,提供了两个进程内的本地方法,login和getfriendlists
 */
+
 // 
 std::string HelloQ(std::string name)
 {
@@ -62,7 +63,6 @@ public:
         response->set_success(login_result);
         // 执行回调操作 执行响应对象数据的序列化和网络发送（都是由框架来完成的)
         done->Run();
-
     }
 
 
@@ -74,7 +74,6 @@ int main(int argc,char **argv)
     // 把UserService对象发布到rpc节点上
     RpcProvider provider; // 网络发布对象 
     provider.NotifyService(new UserService());
-
     //启动rpc
     provider.Run();
 

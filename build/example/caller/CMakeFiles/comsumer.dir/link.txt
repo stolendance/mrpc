@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/comsumer.dir/callerservice.cpp.o CMakeFiles/comsumer.dir/__/user.pb.cc.o  -o ../../../bin/comsumer  -L/home/ubuntu/mrpc/example -Wl,-rpath,/home/ubuntu/mrpc/example ../../../lib/libmrpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 
+/usr/bin/g++  -g  -rdynamic CMakeFiles/comsumer.dir/callerservice.cpp.o CMakeFiles/comsumer.dir/__/user.pb.cc.o  -o ../../../bin/comsumer  -L/home/ubuntu/mrpc/lib -Wl,-rpath,/home/ubuntu/mrpc/lib ../../../lib/libmrpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 
